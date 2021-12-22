@@ -3,8 +3,10 @@ import time
 from pynput.keyboard import Controller
 pynput_keyboard = Controller()
 
-n = int(input())
-l = [input() for _ in range(n)]
+with open('assemble.txt') as f:
+    l = f.read()
+l = l.split('\n')
+n = len(l)
 
 # cmd+shift+4 max num: 1440*900. pyautogui.screenshot(): 2880*1800.
 # im = pyautogui.screenshot(region=(x, y, height, width))

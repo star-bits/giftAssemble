@@ -19,7 +19,7 @@ print("곰재줘 . . ASSEMBLE !!")
 for i in range(1, n+1):
     pynput_keyboard.type("@"+l[i-1])
     print(i, l[i-1])
-    time.sleep(0.5)
+    time.sleep(0.6)
 
     im = pyautogui.screenshot(region=(1395*2, 180*2, 10*2, 70*2))
     px1 = im.getpixel((5*2, 5*2))
